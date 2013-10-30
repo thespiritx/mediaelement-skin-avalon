@@ -1,0 +1,129 @@
+/* Avalon player skin */
+.mejs-container.mejs-avalon {
+
+}
+.mejs-container.mejs-avalon .mejs-controls div {
+	width: 26pt;
+	height: 35pt;
+}
+.mejs-avalon .mejs-controls {
+	background: rgba(35, 35, 38, 0.9);
+	height: 35pt;
+}
+
+.mejs-avalon .mejs-button,
+.mejs-avalon .mejs-time {
+	background: #ddd;
+}
+.mejs-avalon .mejs-controls .mejs-time-rail span {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+.mejs-avalon .mejs-controls .mejs-time-rail .mejs-time-total {
+	background-color: none;
+	background: url(<%= asset_path "mediaelement-skin-avalon/bar.svg" %>) repeat-x 0 0;
+	height: 8px;
+	margin-top: 12pt;
+}
+.mejs-avalon .mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background-color: grey;
+	width: 0;
+	height: 8px;
+}
+.mejs-container.mejs-avalon .mejs-controls .mejs-time span {
+	font-size: 12px;
+	margin: 8pt 0;
+}
+
+.mejs-avalon .mejs-controls .mejs-time-rail .mejs-time-current {
+	width: 0;
+	height: 8px;
+	background-color: white;
+}
+.mejs-avalon .mejs-controls .mejs-time-rail .mejs-time-float {	
+	display: none;
+}
+.mejs-avalon .mejs-controls .mejs-fullscreen-button  {
+	background : none;
+}
+.mejs-avalon .mejs-controls .mejs-fullscreen-button  button {
+	background: transparent url(<%= asset_path "mediaelement-skin-avalon/fullscreen.svg" %>) no-repeat center;
+	margin: 0;
+	padding: 0;
+}
+.mejs-avalon .mejs-controls .mejs-unfullscreen  button {
+	background: transparent url(<%= asset_path "mediaelement-skin-avalon/unfullscreen.svg" %>) no-repeat center;
+	margin: 0;
+	padding: 0;
+}
+.mejs-avalon .mejs-controls .mejs-volume-button  {
+}
+.mejs-avalon .mejs-controls .mejs-mute button {
+	background: url(<%= asset_path "mediaelement-skin-avalon/volume.svg" %>) no-repeat center;
+	margin: 0;
+	padding: 0;
+}
+.mejs-avalon .mejs-controls .mejs-unmute button {
+	background: url(<%= asset_path "mediaelement-skin-avalon/volume_muted.svg" %>) no-repeat center;
+	margin: 0;
+	padding: 0;	
+}
+.mejs-avalon  .mejs-controls .mejs-volume-button .mejs-volume-slider {
+	width: 17pt;
+	height: 65pt;
+	top: -50pt;
+}
+.mejs-avalon  .mejs-controls .mejs-volume-button .mejs-volume-total {
+	background-color: rgb(25,25,27);
+	left: 5pt;
+	width: 6pt;
+	height: 50pt;
+}
+.mejs-avalon  .mejs-controls .mejs-volume-button .mejs-volume-current {
+	background-color: white;
+	left: 5pt;
+	width: 6pt;
+	height: 50pt;
+}
+
+.mejs-avalon  .mejs-controls .mejs-volume-button .mejs-volume-handle {
+	display: none;
+}
+.mejs-avalon  .mejs-controls .mejs-qualities-button button {
+	background: url(<%= asset_path "mediaelement-skin-avalon/cog.svg" %>) no-repeat center;
+}
+.mejs-avalon  .mejs-controls .mejs-thumbnail-selector button {
+	background: url(<%= asset_path "mediaelement-skin-avalon/camera.svg" %>) no-repeat center;
+}
+.mejs-avalon .mejs-controls .mejs-button button {
+	width: 26pt;
+	height: 35pt;
+	background-size: 15pt;
+	margin: 0;
+}
+.mejs-avalon .mejs-controls .mejs-captions-button {
+	display: none;
+}
+.mejs-container.mejs-avalon .mejs-controls div.mejs-playpause-button {
+	width: 35pt;
+	height: 35pt;
+	margin-top: 0;
+}
+.mejs-avalon .mejs-controls .mejs-playpause-button  button {
+	width: 35pt;
+	height: 35pt;
+	background: url(<%= asset_path "mediaelement-skin-avalon/play.svg" %>) no-repeat center;
+        background-size: 13pt;
+	margin: 0;
+	padding: 0;
+}
+.mejs-avalon .mejs-controls  .mejs-playpause-button.mejs-pause button  {
+	background: url(<%= asset_path "mediaelement-skin-avalon/pause.svg" %>) no-repeat center;
+        background-size: 13pt;
+}
+
+/* skin for plugins */
+.mejs-container.mejs-avalon .mejs-controls .mejs-qualities-button .mejs-qualities-selector {
+	width: 70pt;
+	height: auto;
+}
