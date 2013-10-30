@@ -1,9 +1,7 @@
-require "mediaelement-skin-avalon/version"
+require "mediaelement-skin-avalon/engine"
 
 module Mediaelement
-  module Skin
-    module Avalon
+  module Skinavalon
       # Your code goes here...
-    end
   end
 end
