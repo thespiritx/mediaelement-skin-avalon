@@ -1,6 +1,6 @@
 /* Avalon player skin */
-.mejs-container.mejs-avalon {
-
+.mejs-container.mejs-avalon.mejs-audio {
+	background: none;
 }
 .mejs-container.mejs-avalon .mejs-controls div {
 	width: 26pt;
@@ -56,8 +56,7 @@
 	margin: 0;
 	padding: 0;
 }
-.mejs-avalon .mejs-controls .mejs-volume-button  {
-}
+
 .mejs-avalon .mejs-controls .mejs-mute button {
 	background: url(<%= asset_path "mediaelement-skin-avalon/volume.svg" %>) no-repeat center;
 	margin: 0;
@@ -85,10 +84,19 @@
 	width: 6pt;
 	height: 50pt;
 }
-
 .mejs-avalon  .mejs-controls .mejs-volume-button .mejs-volume-handle {
 	display: none;
 }
+
+.mejs-avalon .mejs-controls div.mejs-horizontal-volume-slider {
+	width: 50px;
+}
+.mejs-avalon .mejs-controls div.mejs-horizontal-volume-slider div {
+	width: 50px;
+	height: 8px;
+	margin-top: 7pt;
+}
+
 .mejs-avalon  .mejs-controls .mejs-qualities-button button {
 	background: url(<%= asset_path "mediaelement-skin-avalon/cog.svg" %>) no-repeat center;
 }
