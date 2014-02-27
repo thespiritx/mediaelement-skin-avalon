@@ -1,11 +1,13 @@
 (function($) {
         $.extend(mejs.MepDefaults, {
 		// iOS does not have the metadata before calling load()
-                iOSDisplayedDuration: -1
+                mobileDisplayedDuration: -1
         });
 
         $.extend(MediaElementPlayer.prototype, {
                 buildresponsive: function(player, controls, layers, media) {
+
+			// Hides time rail, elapsed time and fullscreen button because they don't work on the iPhone
                         if (mejs.MediaFeatures.isiPhone && player.isVideo) {
                                 player.container.on("controlsready", function() {
                                         player.total.parent().css('visibility', 'hidden');
@@ -13,10 +15,15 @@
                                         player.fullscreenBtn.hide();
                                 });
                         }
-                        if (mejs.MediaFeatures.isiOS) {
+
+			// Displays a duration because mobile devices don't preload HLS streams
+                        if (mejs.MediaFeatures.isiOS || mejs.MediaFeatures.isAndroid) {
                                 player.container.on("controlsready", function() {
-                                        if (player.options.iOSDisplayedDuration >= 0) {
-                                                player.durationD.text(mejs.Utility.secondsToTimeCode(player.options.iOSDisplayedDuration, player.options.alwaysShowHours || player.options.iOSDisplayedDuration > 3600, player.options.showTimecodeFrameCount, player.options.framesPerSecond || 25));
+                                        if (player.options.mobileDisplayedDuration >= 0) {
+                                                player.durationD.text(mejs.Utility.secondsToTimeCode(player.options.mobileDisplayedDuration,
+										player.options.alwaysShowHours || player.options.mobileDisplayedDuration > 3600,
+										player.options.showTimecodeFrameCount,
+										player.options.framesPerSecond || 25));
                                         }
                                 });
                         }
