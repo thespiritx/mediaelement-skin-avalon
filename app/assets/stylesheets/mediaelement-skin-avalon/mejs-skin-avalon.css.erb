@@ -21,7 +21,7 @@
 }
 .mejs-avalon .mejs-button,
 .mejs-avalon .mejs-time {
-	background: #ddd;
+	/* background: #ddd; */
 }
 .mejs-avalon .mejs-controls .mejs-time-rail span {
 	-webkit-border-radius: 4px;
@@ -41,6 +41,7 @@
 .mejs-container.mejs-avalon .mejs-controls .mejs-time span {
 	font-size: 12px;
 	margin: 8pt 0;
+	display: block;
 }
 
 .mejs-avalon .mejs-controls .mejs-time-rail .mejs-time-current {
@@ -48,7 +49,7 @@
 	height: 8px;
 	background-color: white;
 }
-.mejs-avalon .mejs-controls .mejs-time-rail .mejs-time-float {	
+.mejs-avalon .mejs-controls .mejs-time-rail .mejs-time-float {
 	display: none;
 }
 .mejs-avalon .mejs-controls .mejs-fullscreen-button  {
@@ -73,7 +74,7 @@
 .mejs-avalon .mejs-controls .mejs-unmute button {
 	background: url(<%= asset_path "mediaelement-skin-avalon/volume_muted.svg" %>) no-repeat center;
 	margin: 0;
-	padding: 0;	
+	padding: 0;
 }
 .mejs-avalon  .mejs-controls .mejs-volume-button .mejs-volume-slider {
 	width: 17pt;
@@ -96,10 +97,10 @@
 	display: none;
 }
 
-.mejs-avalon .mejs-controls div.mejs-horizontal-volume-slider {
+.mejs-avalon .mejs-controls a.mejs-horizontal-volume-slider {
 	width: 50px;
 }
-.mejs-avalon .mejs-controls div.mejs-horizontal-volume-slider div {
+.mejs-avalon .mejs-controls a.mejs-horizontal-volume-slider div {
 	width: 50px;
 	height: 8px;
 	margin-top: 7pt;
