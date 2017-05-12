@@ -19,7 +19,7 @@ Or install it yourself as:
 ## Usage
 
 Load the gem assets after mediaelement_rails assets
-Add class "mejs-avalon" to the <video> element
+Add class "mejs__avalon" to the <video> element
 
 ## Contributing
 
