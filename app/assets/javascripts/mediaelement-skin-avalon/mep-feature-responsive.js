@@ -8,7 +8,7 @@
                 buildresponsive: function(player, controls, layers, media) {
 
 			// Hides time rail, elapsed time and fullscreen button because they don't work on the iPhone
-                        if (mejs.MediaFeatures.isiPhone && player.isVideo) {
+                        if (mejs.Features.isiPhone && player.isVideo) {
                                 player.container.on("controlsready", function() {
                                         player.total.parent().css('visibility', 'hidden');
                                         player.currenttime.parent().css('visibility', 'hidden');
@@ -17,7 +17,7 @@
                         }
 
 			// Displays a duration because mobile devices don't preload HLS streams
-                        if (mejs.MediaFeatures.isiOS || mejs.MediaFeatures.isAndroid) {
+                        if (mejs.Features.isiOS || mejs.Features.isAndroid) {
                                 player.container.on("controlsready", function() {
                                         if (player.options.mobileDisplayedDuration >= 0) {
                                                 player.durationD.text(mejs.Utility.secondsToTimeCode(player.options.mobileDisplayedDuration,
