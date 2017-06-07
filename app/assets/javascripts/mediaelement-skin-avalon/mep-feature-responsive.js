@@ -20,7 +20,7 @@
                         if (mejs.Features.isiOS || mejs.Features.isAndroid) {
                                 player.container.on("controlsready", function() {
                                         if (player.options.mobileDisplayedDuration >= 0) {
-                                                player.durationD.text(mejs.Utility.secondsToTimeCode(player.options.mobileDisplayedDuration,
+                                                player.durationD.text(mejs.Utils.secondsToTimeCode(player.options.mobileDisplayedDuration,
 										player.options.alwaysShowHours || player.options.mobileDisplayedDuration > 3600,
 										player.options.showTimecodeFrameCount,
 										player.options.framesPerSecond || 25));
